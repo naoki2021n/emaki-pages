@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+  クリプトニンジャ絵巻 サポート（公開用の1枚）
+
+  ここが原本である。**www/ には置かない**——www/ は .gitignore に入っていて、
+  scripts/build_web.sh が毎回 `rm -rf www` してから組み直す生成物のフォルダなので、
+  置いた瞬間から次のビルドで消える運命になる（site/privacy.html と同じ理由）。
+
+  外部への読み込みを1つも持たない（フォント・CSS・スクリプト・画像すべて無し）。
+  どこへ置いても、どのネットワークからでも、これ1ファイルだけで成立する。
+
+  日本語の本文は src/menu.js の SUPPORT_PAGES と同じ文言でなければならない。
+  片方だけ直すと scripts/test_sim.js の「サポートの本文」が落ちる。
+
+  App Review Guideline 1.5（Developer Information）は
+  "Make sure your app and its Support URL include an easy way to contact you"
+  と、アプリ自身とSupport URLの**両方**に問い合わせ手段を求める。このページがその
+  Support URL 側であり、src/menu.js の音と設定 → サポート がアプリ内の側にあたる。
+-->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>クリプトニンジャ絵巻 サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: #E8DCC0;
+    color: #2A3244;
+    font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", system-ui, sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.5rem; line-height: 1.5; margin: 0 0 .25em; }
+  h2 { font-size: 1.05rem; margin: 2.2em 0 .4em; padding-bottom: .2em; border-bottom: 2px solid #C9A227; }
+  p { margin: 0 0 1em; }
+  .meta { margin: 0 0 2em; color: rgba(42,50,68,.66); font-size: .9rem; }
+  .note { margin-top: 3em; padding-top: 1.2em; border-top: 1px solid rgba(42,50,68,.28); font-size: .9rem; color: rgba(42,50,68,.72); }
+  .lang { margin-top: 4em; padding-top: 2em; border-top: 3px double rgba(42,50,68,.35); }
+  a { color: #2A3244; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1B2030; color: #E4DCC8; }
+    .meta, .note { color: rgba(228,220,200,.7); }
+    .note { border-top-color: rgba(228,220,200,.28); }
+    .lang { border-top-color: rgba(228,220,200,.35); }
+    a { color: #E4DCC8; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>クリプトニンジャ絵巻 サポート</h1>
+<p class="meta">最終更新 2026-07-29</p>
+
+<h2>このアプリについて</h2>
+<p>完全オフラインで動く、ひとり用の防衛遊びです。通信は一切行いません。アカウント登録もログインも要りません。広告も表示しません。</p>
+
+<h2>Q. インターネット接続は必要ですか</h2>
+<p>いいえ。インストールしたあとは、通信を一切行いません。</p>
+
+<h2>Q. アカウント登録は必要ですか</h2>
+<p>不要です。ログイン機能もありません。</p>
+
+<h2>Q. 遊んだ記録はどこに保存されますか</h2>
+<p>端末内だけに保存します。外部のサーバーへは一切送りません。くわしくは プライバシー の頁をご覧ください。</p>
+
+<h2>Q. 記録を消すには</h2>
+<p>音と設定 から はじめから を選ぶと、保存された進み具合と設定はすべて消えます。アプリを削除した場合も同様に消えます。消した記録は元に戻せません。</p>
+
+<h2>Q. 課金はありますか</h2>
+<p>いまの版は無料で、アプリ内課金はありません。</p>
+
+<h2>Q. 不具合を見つけた・意見を伝えたい</h2>
+<p>お手数ですが、下記の連絡先までご連絡ください。どの巻・どの戦で何が起きたかを添えていただけると助かります。</p>
+
+<h2>連絡先</h2>
+<p>X（旧Twitter）@naoki_ninja_ へのダイレクトメッセージ</p>
+
+<p class="note">本作はCryptoNinjaの二次創作です（非公式）。CryptoNinja公式・公認の作品ではありません。</p>
+
+<div class="lang">
+
+<h1>Cryptoninja Emaki — Support</h1>
+<p class="meta">Last updated: 2026-07-29</p>
+
+<h2>About this app</h2>
+<p>This is a single-player tower-defense game that runs completely offline. It makes no network requests at all. No account or sign-in is required, and it shows no advertising.</p>
+
+<h2>Q. Do I need an internet connection?</h2>
+<p>No. Once installed, the app never communicates over the network.</p>
+
+<h2>Q. Do I need to create an account?</h2>
+<p>No account is required and there is no sign-in feature.</p>
+
+<h2>Q. Where is my progress stored?</h2>
+<p>Only on your device. Nothing is ever sent to an external server. See the Privacy Policy page for details.</p>
+
+<h2>Q. How do I erase my progress?</h2>
+<p>Choose はじめから (Start Over) under 音と設定 (Sound &amp; Settings) inside the app to erase all stored progress and settings. Deleting the app has the same effect. Erased progress cannot be restored.</p>
+
+<h2>Q. Are there any in-app purchases?</h2>
+<p>The current version is free, with no in-app purchases.</p>
+
+<h2>Q. I found a bug, or I have feedback</h2>
+<p>Please contact us at the address below. Including which chapter and battle you were in when the issue occurred helps a great deal.</p>
+
+<h2>Contact</h2>
+<p>Direct message to @naoki_ninja_ on X (formerly Twitter)</p>
+
+<p class="note">This is an unofficial fan work based on the CryptoNinja character IP. It is not an official or endorsed CryptoNinja product.</p>
+
+</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+  クリプトニンジャ絵巻 プライバシーポリシー（公開用の1枚）
+
+  ここが原本である。**www/ には置かない**——www/ は .gitignore に入っていて、
+  scripts/build_web.sh が毎回 `rm -rf www` してから組み直す生成物のフォルダなので、
+  置いた瞬間から次のビルドで消える運命になる。
+
+  外部への読み込みを1つも持たない（フォント・CSS・スクリプト・画像すべて無し）。
+  どこへ置いても、どのネットワークからでも、これ1ファイルだけで成立する。
+
+  本文は src/menu.js の PRIVACY_PAGES と同じ文言でなければならない。
+  片方だけ直すと scripts/test_sim.js の「プライバシーの本文」が落ちる。
+-->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>クリプトニンジャ絵巻 プライバシーポリシー / Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: #E8DCC0;
+    color: #2A3244;
+    font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", system-ui, sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.5rem; line-height: 1.5; margin: 0 0 .25em; }
+  h2 { font-size: 1.05rem; margin: 2.2em 0 .4em; padding-bottom: .2em; border-bottom: 2px solid #C9A227; }
+  p { margin: 0 0 1em; }
+  .meta { margin: 0 0 2em; color: rgba(42,50,68,.66); font-size: .9rem; }
+  .note { margin-top: 3em; padding-top: 1.2em; border-top: 1px solid rgba(42,50,68,.28); font-size: .9rem; color: rgba(42,50,68,.72); }
+  .lang { margin-top: 4em; padding-top: 2em; border-top: 3px double rgba(42,50,68,.35); }
+  a { color: #2A3244; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1B2030; color: #E4DCC8; }
+    .meta, .note { color: rgba(228,220,200,.7); }
+    .note { border-top-color: rgba(228,220,200,.28); }
+    .lang { border-top-color: rgba(228,220,200,.35); }
+    a { color: #E4DCC8; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>クリプトニンジャ絵巻 プライバシーポリシー</h1>
+<p class="meta">最終更新 2026-07-29</p>
+
+<h2>1. 収集する情報</h2>
+<p>本アプリは、利用者の個人情報を一切収集しません。氏名、メールアドレス、電話番号、位置情報、連絡先、写真、端末の識別子、いずれも取得しません。アカウント登録は不要で、ログイン機能もありません。</p>
+
+<h2>2. 通信</h2>
+<p>本アプリは外部のサーバーと通信しません。すべての処理は端末の中だけで完結します。広告は表示せず、アクセス解析やクラッシュ収集の仕組みも組み込んでいません。</p>
+
+<h2>3. 保存される情報</h2>
+<p>遊んだ進み具合（クリアした巻、手に入れた札と大将、設定）は、端末内の保存領域（iOSのアプリ専用領域）にのみ保存されます。この情報が端末の外へ出ることはありません。</p>
+
+<h2>4. 情報の削除</h2>
+<p>アプリ内の 音と設定 から はじめから を選ぶと、保存された進み具合と設定はすべて消えます。アプリを削除した場合も、保存領域ごと削除されます。開発者に削除を依頼する必要はありません（そもそも開発者は利用者のデータを保持していません）。</p>
+
+<h2>5. 第三者への提供</h2>
+<p>提供する情報がないため、第三者への提供・共有・売却は行いません。</p>
+
+<h2>6. 子どもの利用について</h2>
+<p>本アプリは個人情報を収集しないため、年齢にかかわらず同じ扱いになります。</p>
+
+<h2>7. 変更</h2>
+<p>本ポリシーを変更する場合は、このページを更新し、最終更新日を書き換えます。</p>
+
+<h2>8. 連絡先</h2>
+<p>X（旧Twitter）@naoki_ninja_ へのダイレクトメッセージ</p>
+
+<p class="note">本作はCryptoNinjaの二次創作です（非公式）。CryptoNinja公式・公認の作品ではありません。</p>
+
+<div class="lang">
+
+<h1>Cryptoninja Emaki — Privacy Policy</h1>
+<p class="meta">Last updated: 2026-07-29</p>
+
+<h2>1. Information we collect</h2>
+<p>This app collects no personal information whatsoever. It does not obtain your name, email address, phone number, location, contacts, photos, or any device identifier. No account registration is required and the app has no sign-in.</p>
+
+<h2>2. Network</h2>
+<p>This app does not communicate with any external server. Everything runs entirely on your device. It shows no advertising and contains no analytics or crash-reporting components.</p>
+
+<h2>3. Information stored on your device</h2>
+<p>Your progress (chapters cleared, cards and commanders obtained, settings) is stored only in the app's own storage area on your device (the app sandbox on iOS). This information never leaves the device.</p>
+
+<h2>4. Deleting your information</h2>
+<p>Choosing はじめから (Start Over) under 音と設定 (Sound &amp; Settings) inside the app erases all stored progress and settings. Deleting the app also removes the storage area together with it. There is no need to ask the developer to delete anything — the developer holds no user data in the first place.</p>
+
+<h2>5. Sharing with third parties</h2>
+<p>Because there is no information to share, nothing is provided, shared, or sold to any third party.</p>
+
+<h2>6. Children</h2>
+<p>Because this app collects no personal information, the same terms apply regardless of the user's age.</p>
+
+<h2>7. Changes</h2>
+<p>If this policy changes, this page will be updated and the last-updated date revised.</p>
+
+<h2>8. Contact</h2>
+<p>Direct message to @naoki_ninja_ on X (formerly Twitter)</p>
+
+<p class="note">This is an unofficial fan work based on the CryptoNinja character IP. It is not an official or endorsed CryptoNinja product.</p>
+
+</div>
+</main>
+</body>
+</html>
